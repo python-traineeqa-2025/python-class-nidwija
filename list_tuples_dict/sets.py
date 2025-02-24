@@ -1,33 +1,28 @@
 # unordered and mutable, but elements must be unique
+
 s1 = {1, 2, 3, 4, 5}
 s2 = {3, 4, 5, 6, 7}
 
 # Creating a Set
 empty_set = set()  # This creates an empty set (not {})
 set_from_list = set([1, 2, 3, 1, 2, 4])  # Removes duplicates
-print(set_from_list)  # {1, 2, 3, 4}
+print(set_from_list)
 
-# Accessing Elements(not possible directly as sets are unordered)
-for item in s1:
-    print(item)  # Iterating over set
 
 # Adding Elements
 s1.add(10)  # Adds 10 to the set
-print(s1)  # {1, 2, 3, 4, 5, 10}
+print(s1)
 
 # Removing Elements
 s1.remove(3)  # Removes 3 (Error if not present)
-print(s1)  # {1, 2, 4, 5, 10}
-
-s1.discard(5)  # Removes 5 (No error if not present)
-print(s1)  # {1, 2, 4, 10}
-
-popped_element = s1.pop()  # Removes and returns an arbitrary element
-print(popped_element)
 print(s1)
 
+s1.discard(5)  # Removes 5 (No error if not present)
+print(s1)
+
+
 s1.clear()  # Removes all elements from the set
-print(s1)  # set()
+print(s1)
 
 # Set Operations
 s1 = {1, 2, 3, 4, 5}
@@ -50,20 +45,20 @@ print(2 in s1)  # True
 print(10 not in s1)  # True
 
 # Set Length
-print(len(s1))  # 5
+print(len(s1))
 
 # Subset and Superset Checks
 s3 = {1, 2}
 print(s3.issubset(s1))  # True (s3 is subset of s1)
 print(s1.issuperset(s3))  # True (s1 is superset of s3)
 
-# Copying a Set
+
 s4 = s1.copy()
-print(s4)  # {1, 2, 3, 4, 5}
+print(s4)
 
 # Frozen Sets (Immutable Sets)
 fset = frozenset([1, 2, 3, 4])
-print(fset)  # frozenset({1, 2, 3, 4})
+print(fset)
 
 # Uncommenting the below line will throw an error since frozen sets are immutable
 # fset.add(5)  # AttributeError: 'frozenset' object has no attribute 'add'
