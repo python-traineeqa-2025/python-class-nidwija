@@ -19,9 +19,3 @@ a = ' hello '
 print(a)
 print(a.strip())
 print(p.replace('r', 'f'))
-
-# split/join
-b = 'hello my name'
-print(b.split(' '))
-o = ['hello', 'hi']
-print(','.join(o))

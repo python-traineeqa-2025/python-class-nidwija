@@ -8,18 +8,17 @@ print(b.split(' '))  # Split into a list
 o = ['hello', 'hi']
 print(','.join(o))  # Join with a separator
 
-# String Checks
 print(p.startswith('c'))  # Check if starts with 'c'
 print(p.endswith('r'))  # Check if ends with 'r'
 
-# Checking if Strings are Numeric or Alphabetic
+
 print(p.isalpha())  # True (alphabetic)
 print(p.isdigit())  # False (numeric)
 print("123".isdigit())  # True
 print("race123".isalnum())  # True (alphanumeric)
 
 # String Formatting
-name = "Nidwija"
+name = "ram"
 age = 26
 print(f"My name is {name} and I am {age} years old.")  # f-string
 print("My name is {} and I am {} years old.".format(name, age))  # .format()
