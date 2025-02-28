@@ -17,12 +17,12 @@ print(p.isdigit())  # False (numeric)
 print("123".isdigit())  # True
 print("race123".isalnum())  # True (alphanumeric)
 
-# String Formatting
-name = "ram"
-age = 26
-print(f"My name is {name} and I am {age} years old.")  # f-string
-print("My name is {} and I am {} years old.".format(name, age))  # .format()
-print("My name is %s and I am %d years old." % (name, age))  # % formatting
+# # String Formatting
+# name = "ram"
+# age = 26
+# print(f"My name is {name} and I am {age} years old.")  # f-string
+# print("My name is {} and I am {} years old.".format(name, age))  # .format()
+# print("My name is %s and I am %d years old." % (name, age))  # % formatting
 
 # Finding Substrings
 print(b.find("name"))  # Index of substring (-1 if not found)
@@ -39,9 +39,9 @@ print("He said \"Hello\"")  # Escape quotes
 print("HELLO".isupper())  # True
 print("hello".islower())  # True
 
-# Zero Padding (zfill)
-print("5".zfill(3))  # Output: '005'
-print("42".zfill(5))  # Output: '00042'
+# # Zero Padding (zfill)
+# print("5".zfill(3))  # Output: '005'
+# print("42".zfill(5))  # Output: '00042'
 
 # Reversing a String Without Slicing
 print("".join(reversed(p)))  # Output: 'rac'

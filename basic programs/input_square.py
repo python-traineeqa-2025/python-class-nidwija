@@ -1,15 +1,16 @@
-# Take a list of numbers as input
-numbers = [int(x) for x in input("Enter numbers separated by spaces: ").split()]
+# numbers = [int(x) for x in input("Enter numbers separated by spaces: ").split()]
+user_input = (input("Enter space-separated values: ").split())
+numbers = user_input
 
-# Initialize an empty list to store the squares of even numbers
+# for x in user_input.split():
+#     numbers.append(int(x))
+
 squared_evens = []
 
-# Iterate through the list
 for num in numbers:
-    if num % 2 == 0:  # Check if the number is even
-        squared_evens.append(num ** 2)  # Add the square of the even number to the list
+    if int(num) % 2 == 0:  # Check if the number is even
+        squared_evens.append(int(num) ** 2)  # Add the square of the even number to the list
 
-# Print the result
 print("Squares of even numbers:", squared_evens)
 
 

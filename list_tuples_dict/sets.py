@@ -2,10 +2,11 @@
 
 s1 = {1, 2, 3, 4, 5}
 s2 = {3, 4, 5, 6, 7}
-
+l=[]
 # Creating a Set
 empty_set = set()  # This creates an empty set (not {})
-set_from_list = set([1, 2, 3, 1, 2, 4])  # Removes duplicates
+p=[1,2,3,1,1,4,5,5,6,1,4,6]
+set_from_list = set(p)  # Removes duplicates
 print(set_from_list)
 
 
